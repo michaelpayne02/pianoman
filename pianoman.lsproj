@@ -1,7 +1,7 @@
 {
     "lens_id": "",
     "version": "0",
-    "lastChanged": "1516588314111",
+    "lastChanged": "1516662229086",
     "preview": "icon.png",
     "isReadOnly": "false",
     "studioVersion": {
@@ -42,8 +42,7 @@
         "InspectorUiComponent": {
             "collapsedList": [
                 [
-                    "1508543170105077:279219",
-                    "1516492056709392:9403"
+                    "1508543170105077:279219"
                 ]
             ]
         }
@@ -93,16 +92,6 @@
                     "additionalProperties": "",
                     "flags": "1",
                     "type": "1",
-                    "subtype": "0"
-                },
-                {
-                    "resId": "806",
-                    "uid": "1516489510706940:16496",
-                    "name": "\/Resources\/Resource806.mp3",
-                    "sourceFilePath": "C:\/Users\/mikea\/Documents\/PianoMan\/pianomanCut.mp3",
-                    "additionalProperties": "",
-                    "flags": "1",
-                    "type": "5",
                     "subtype": "0"
                 },
                 {
@@ -158,6 +147,26 @@
                     "flags": "1",
                     "type": "1",
                     "subtype": "0"
+                },
+                {
+                    "resId": "835",
+                    "uid": "1516661818484501:1695",
+                    "name": "\/Resources\/Resource835.mp3",
+                    "sourceFilePath": "C:\/Users\/mikea\/Documents\/PianoMan\/pianoman\/Public\/part2.mp3",
+                    "additionalProperties": "",
+                    "flags": "1",
+                    "type": "5",
+                    "subtype": "0"
+                },
+                {
+                    "resId": "837",
+                    "uid": "1516662204319001:3538",
+                    "name": "\/Resources\/Resource837.mp3",
+                    "sourceFilePath": "C:\/Users\/mikea\/Documents\/PianoMan\/part1.mp3",
+                    "additionalProperties": "",
+                    "flags": "1",
+                    "type": "5",
+                    "subtype": "0"
                 }
             ]
         },
@@ -166,7 +175,8 @@
                 "0": "1516488874861653:15427",
                 "1": "1516489527450987:16594",
                 "2": "1516493397882109:2067",
-                "3": "1516565428774044:14013"
+                "3": "1516565428774044:14013",
+                "4": "1516661839340136:1722"
             }
         },
         "LayerComponent": {
@@ -260,14 +270,19 @@
                 ],
                 "resources": [
                     {
-                        "name": "pianomanCut",
-                        "resourceId": "806",
-                        "extension": "mp3"
-                    },
-                    {
                         "name": "Diffuse",
                         "resourceId": "833",
                         "extension": ""
+                    },
+                    {
+                        "name": "part2",
+                        "resourceId": "835",
+                        "extension": "mp3"
+                    },
+                    {
+                        "name": "part1",
+                        "resourceId": "837",
+                        "extension": "mp3"
                     }
                 ]
             },
@@ -275,10 +290,6 @@
                 {
                     "id": "805",
                     "path": "Textures\/base_post_effect_lookup_table.png"
-                },
-                {
-                    "id": "806",
-                    "path": "pianomanCut.mp3"
                 },
                 {
                     "id": "821",
@@ -295,6 +306,14 @@
                 {
                     "id": "834",
                     "path": "Diffuse Textures\/Base.png"
+                },
+                {
+                    "id": "835",
+                    "path": "part2.mp3"
+                },
+                {
+                    "id": "837",
+                    "path": "part1.mp3"
                 }
             ]
         }

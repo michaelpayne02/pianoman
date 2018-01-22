@@ -1,3 +1,9 @@
+//  @input Component.AudioComponent startAudio
+//  @input Component.AudioComponent tapAudio
+//  @input Component.PostEffectVisual tapPost
+//  @input Asset.Texture deviceCameraTexture
+//  @input Component.MeshVisual meshVisual
+
 global.touchSystem.touchBlocking = true;
 
 script.api.active = false;
@@ -12,6 +18,8 @@ var length = 19.3; //Length of the audio clip in seconds.
 
 var fadeOut = 4; //Time that the screen fades out.
 
+script.startAudio.play(-1);
+
 //Create an even that triggers every time the frame is updated.
 var update = script.createEvent("UpdateEvent");
 update.bind(function (eventData)
@@ -20,7 +28,12 @@ update.bind(function (eventData)
 	if (script.api.active) {
 		deltaTime += eventData.getDeltaTime(); //Adds the time since the last frame was calculated to the deltaTime variable.
 
-		if (deltaTime < length / rate) {
+		if (eventData.getDeltaTime() >= 20) return; 
+		//Don't insert another frame into the buffer if we're having performance issues. This will help midigate performance issues. 
+		//Minimum framerate set at 20fps, as specified by Snapchat's "Performance and Optimization" article: 
+		//https://lensstudio.snapchat.com/guides/submission/performance-and-optimization/ 
+
+		if (frameBuffer.length < length / rate * 30) {
 			//Stores the frames into an array to be deisplayed on a mesh.
 			frameBuffer[frameNumber] = script.deviceCameraTexture.copyFrame();
 		}
