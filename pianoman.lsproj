@@ -1,0 +1,302 @@
+{
+    "lens_id": "",
+    "version": "0",
+    "lastChanged": "1516586575653",
+    "preview": "icon.png",
+    "isReadOnly": "false",
+    "studioVersion": {
+        "createdWith": {
+            "major": "1",
+            "minor": "0",
+            "patch": "0",
+            "build": "0"
+        },
+        "lastSavedWith": {
+            "major": "1",
+            "minor": "0",
+            "patch": "0",
+            "build": "0"
+        }
+    },
+    "view": {
+        "ResourceUiComponent": {
+            "collapsedList": [
+                ""
+            ]
+        },
+        "SceneTreeUiComponent": {
+            "collapsedList": [
+                [
+                    "1509398098262568:84736"
+                ]
+            ]
+        },
+        "MetaInfoUIComponent": {
+            "icon_hash": "",
+            "icon_path": "icon.png",
+            "hints": [
+                "lens_hint_tap"
+            ],
+            "lens": "Piano Man"
+        },
+        "InspectorUiComponent": {
+            "collapsedList": [
+                [
+                    "1508543170105077:279219",
+                    "1516492056709392:9403"
+                ]
+            ]
+        }
+    },
+    "model": {
+        "ResourceManager": {
+            "list": [
+                {
+                    "resId": "1",
+                    "uid": "1:1",
+                    "name": "Camera Output",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0",
+                    "type": "1",
+                    "subtype": "1"
+                },
+                {
+                    "resId": "2",
+                    "uid": "2:2",
+                    "name": "Camera Input",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0",
+                    "type": "1",
+                    "subtype": "3"
+                },
+                {
+                    "resId": "804",
+                    "uid": "1516488875013381:15441",
+                    "name": "\/Resources\/Resource804",
+                    "sourceFilePath": "",
+                    "additionalProperties": {
+                        "pass_source": [
+                            ""
+                        ]
+                    },
+                    "flags": "3",
+                    "type": "2",
+                    "subtype": "0"
+                },
+                {
+                    "resId": "805",
+                    "uid": "1516488902463148:15589",
+                    "name": "\/Resources\/Resource805.png",
+                    "sourceFilePath": "C:\/Users\/mikea\/Documents\/PianoMan\/base_post_effect_lookup_table.png",
+                    "additionalProperties": "",
+                    "flags": "1",
+                    "type": "1",
+                    "subtype": "0"
+                },
+                {
+                    "resId": "806",
+                    "uid": "1516489510706940:16496",
+                    "name": "\/Resources\/Resource806.mp3",
+                    "sourceFilePath": "C:\/Users\/mikea\/Documents\/PianoMan\/pianomanCut.mp3",
+                    "additionalProperties": "",
+                    "flags": "1",
+                    "type": "5",
+                    "subtype": "0"
+                },
+                {
+                    "resId": "821",
+                    "uid": "1516493107252790:1101",
+                    "name": "\/Resources\/Resource821.mesh",
+                    "sourceFilePath": "C:\/Program Files\/Snap Inc\/\/Studio3DResources.bundle\/\/\/meshes\/Plane.mesh",
+                    "additionalProperties": "",
+                    "flags": "1",
+                    "type": "3",
+                    "subtype": "0"
+                },
+                {
+                    "resId": "822",
+                    "uid": "1516493137553305:1232",
+                    "name": "\/Resources\/Resource822.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1",
+                    "type": "4",
+                    "subtype": "0"
+                },
+                {
+                    "resId": "823",
+                    "uid": "1516493177560351:1251",
+                    "name": "\/Resources\/Resource823.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1",
+                    "type": "4",
+                    "subtype": "0"
+                },
+                {
+                    "resId": "833",
+                    "uid": "1516494980203289:1727",
+                    "name": "\/Resources\/Resource833",
+                    "sourceFilePath": "",
+                    "additionalProperties": {
+                        "pass_source": [
+                            ""
+                        ]
+                    },
+                    "flags": "1",
+                    "type": "2",
+                    "subtype": "0"
+                },
+                {
+                    "resId": "834",
+                    "uid": "1516494980205816:1737",
+                    "name": "\/Resources\/Resource834.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1",
+                    "type": "1",
+                    "subtype": "0"
+                }
+            ]
+        },
+        "RenderOrderComponent": {
+            "autoRenderOrder": {
+                "0": "1516488874861653:15427",
+                "1": "1516489527450987:16594",
+                "2": "1516493397882109:2067",
+                "3": "1516565428774044:14013"
+            }
+        },
+        "LayerComponent": {
+            "nextLayerId": "4",
+            "showOrthographicLayer": "false",
+            "layersInfo": [
+                {
+                    "layerId": "1",
+                    "layerName": "Default Layer",
+                    "layerMask": "1"
+                },
+                {
+                    "layerId": "2",
+                    "layerName": "Orthographic Layer",
+                    "layerMask": "1048576"
+                }
+            ]
+        },
+        "EffectsComponent": {
+            "6": "",
+            "7": ""
+        },
+        "WorldComponent": {
+            "sceneFile": "scene.scn"
+        }
+    },
+    "controller": {
+        "ResourceController": {
+            "tree": {
+                "name": "Root",
+                "groups": [
+                    {
+                        "name": "Textures",
+                        "groups": "",
+                        "resources": [
+                            {
+                                "name": "Camera Output",
+                                "resourceId": "1",
+                                "extension": ""
+                            },
+                            {
+                                "name": "Device Camera Texture",
+                                "resourceId": "2",
+                                "extension": ""
+                            },
+                            {
+                                "name": "base_post_effect_lookup_table",
+                                "resourceId": "805",
+                                "extension": "png"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Scripts",
+                        "groups": "",
+                        "resources": [
+                            {
+                                "name": "Init",
+                                "resourceId": "822",
+                                "extension": "js"
+                            },
+                            {
+                                "name": "Tap",
+                                "resourceId": "823",
+                                "extension": "js"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Meshes",
+                        "groups": "",
+                        "resources": [
+                            {
+                                "name": "Plane",
+                                "resourceId": "821",
+                                "extension": "mesh"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Diffuse Textures",
+                        "groups": "",
+                        "resources": [
+                            {
+                                "name": "Base",
+                                "resourceId": "834",
+                                "extension": "png"
+                            }
+                        ]
+                    }
+                ],
+                "resources": [
+                    {
+                        "name": "pianomanCut",
+                        "resourceId": "806",
+                        "extension": "mp3"
+                    },
+                    {
+                        "name": "Diffuse",
+                        "resourceId": "833",
+                        "extension": ""
+                    }
+                ]
+            },
+            "publicAssets": [
+                {
+                    "id": "805",
+                    "path": "Textures\/base_post_effect_lookup_table.png"
+                },
+                {
+                    "id": "806",
+                    "path": "pianomanCut.mp3"
+                },
+                {
+                    "id": "821",
+                    "path": "Meshes\/Plane.mesh"
+                },
+                {
+                    "id": "822",
+                    "path": "Scripts\/Init.js"
+                },
+                {
+                    "id": "823",
+                    "path": "Scripts\/Tap.js"
+                },
+                {
+                    "id": "834",
+                    "path": "Diffuse Textures\/Base.png"
+                }
+            ]
+        }
+    }
+}
