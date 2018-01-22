@@ -1,7 +1,7 @@
 {
     "lens_id": "",
     "version": "0",
-    "lastChanged": "1516586575653",
+    "lastChanged": "1516588314111",
     "preview": "icon.png",
     "isReadOnly": "false",
     "studioVersion": {
@@ -32,7 +32,7 @@
             ]
         },
         "MetaInfoUIComponent": {
-            "icon_hash": "",
+            "icon_hash": "15ce12687503e6a66342c405993c41ff",
             "icon_path": "icon.png",
             "hints": [
                 "lens_hint_tap"
