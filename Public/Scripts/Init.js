@@ -48,7 +48,7 @@ update.bind(function (eventData)
 				var alpha = (length - deltaTime)/fadeOut;
 				script.meshVisual.mainPass.baseColor = new vec4(alpha, alpha, alpha, 1);
 			}
-		}
+		} else reset();
 		
 		frameNumber++;
 	} else reset();
