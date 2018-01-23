@@ -12,7 +12,7 @@ var frameBuffer = []; //Stores 1-2 of the slo-motion frames at a time.
 var deltaTime = 0; //Time since the screen has been tapped.
 var frameNumber = 0; //How many frames have been captured since the screen was touched.
 
-var rate = 2; //How fast the frames will be played back at (relative to the deltaTime). IMPORTANT (this is what you need to choose. Either 2 or 3)
+var rate = 3; //How fast the frames will be played back at (relative to the deltaTime). IMPORTANT (this is what you need to choose. Either 2 or 3)
 
 var length = 19.3; //Length of the audio clip in seconds.
 
