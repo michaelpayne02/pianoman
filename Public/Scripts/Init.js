@@ -33,7 +33,7 @@ update.bind(function (eventData)
 		//Minimum framerate set at 20fps, as specified by Snapchat's "Performance and Optimization" article: 
 		//https://lensstudio.snapchat.com/guides/submission/performance-and-optimization/ 
 
-		if (frameBuffer.length < length / rate * 30) {
+		if (frameBuffer.length < length / rate * 30 && deltaTime) {
 			//Stores the frames into an array to be deisplayed on a mesh.
 			frameBuffer[frameNumber] = script.deviceCameraTexture.copyFrame();
 		}
@@ -44,12 +44,13 @@ update.bind(function (eventData)
 				//Prevent memory leaks by removing the frames before the current one.
 				if (frameNumber > 0) frameBuffer[frameNumber/rate - 1] = null; 
 			}
-			if (deltaTime > length - fadeOut) {
+			//Fade out at the desired seconds.
+			if (deltaTime > length - fadeOut && deltaTime < length) {
 				var alpha = (length - deltaTime)/fadeOut;
 				script.meshVisual.mainPass.baseColor = new vec4(alpha, alpha, alpha, 1);
 			}
-		} else reset();
-		
+		} else frameBuffer = [];
+		print(frameBuffer.length.toString());	
 		frameNumber++;
 	} else reset();
 
