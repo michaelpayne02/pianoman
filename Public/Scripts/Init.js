@@ -2,7 +2,7 @@
 //  @input Component.AudioComponent tapAudio
 //  @input Component.PostEffectVisual tapPost
 //  @input Asset.Texture deviceCameraTexture
-//  @input Component.MeshVisual meshVisual
+//  @input Component.SpriteVisual spriteVisual
 
 global.touchSystem.touchBlocking = true;
 
@@ -34,23 +34,22 @@ update.bind(function (eventData)
 		//https://lensstudio.snapchat.com/guides/submission/performance-and-optimization/ 
 
 		if (frameBuffer.length < length / rate * 30 && deltaTime) {
-			//Stores the frames into an array to be deisplayed on a mesh.
+			//Stores the frames into an array to be deisplayed on a sprite.
 			frameBuffer[frameNumber] = script.deviceCameraTexture.copyFrame();
 		}
 		if (deltaTime < length) {
 			if (frameNumber % rate == 0 && frameNumber < frameBuffer.length * rate) {
-				//Places stored frames into the meshVisual's texture.
-				script.meshVisual.mainPass.baseTex = frameBuffer[frameNumber/rate];
+				//Places stored frames into the spriteVisual's texture.
+				script.spriteVisual.mainPass.baseTex = frameBuffer[frameNumber/rate];
 				//Prevent memory leaks by removing the frames before the current one.
 				if (frameNumber > 0) frameBuffer[frameNumber/rate - 1] = null; 
 			}
 			//Fade out at the desired seconds.
 			if (deltaTime > length - fadeOut && deltaTime < length) {
 				var alpha = (length - deltaTime)/fadeOut;
-				script.meshVisual.mainPass.baseColor = new vec4(alpha, alpha, alpha, 1);
+				script.spriteVisual.mainPass.baseColor = new vec4(alpha, alpha, alpha, 1);
 			}
 		} else frameBuffer = [];
-		print(frameBuffer.length.toString());	
 		frameNumber++;
 	} else reset();
 
