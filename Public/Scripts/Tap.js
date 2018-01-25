@@ -7,7 +7,6 @@ if (script.api.active == false) {
 	script.api.active = true;
 	script.startAudio.stop(false);
 	script.spriteVisual.enabled = true;
-	print(script.spriteVisual.enabled.toString());
 	script.tapPost.enabled = true;
 	script.tapAudio.play(1);
 	

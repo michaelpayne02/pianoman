@@ -1,7 +1,7 @@
 {
     "lens_id": "91e21fff-a0b4-49a7-8eb6-3313bc3d5385",
     "version": "0",
-    "lastChanged": "1516811392091",
+    "lastChanged": "1516852049370",
     "preview": "icon.png",
     "isReadOnly": "false",
     "studioVersion": {
@@ -234,13 +234,13 @@
                         "groups": "",
                         "resources": [
                             {
-                                "name": "Init",
-                                "resourceId": "822",
+                                "name": "Tap",
+                                "resourceId": "823",
                                 "extension": "js"
                             },
                             {
-                                "name": "Tap",
-                                "resourceId": "823",
+                                "name": "Init",
+                                "resourceId": "822",
                                 "extension": "js"
                             }
                         ]
