@@ -1,7 +1,7 @@
 {
     "lens_id": "91e21fff-a0b4-49a7-8eb6-3313bc3d5385",
     "version": "0",
-    "lastChanged": "1516852049370",
+    "lastChanged": "1516935585619",
     "preview": "icon.png",
     "isReadOnly": "false",
     "studioVersion": {
@@ -42,7 +42,8 @@
         "InspectorUiComponent": {
             "collapsedList": [
                 [
-                    "1508543170105077:279219"
+                    "1508543170105077:279219",
+                    "1516810434331355:1238"
                 ]
             ]
         }
@@ -157,16 +158,6 @@
                     "flags": "0",
                     "type": "1",
                     "subtype": "1"
-                },
-                {
-                    "resId": "849",
-                    "uid": "1516810815946080:7790",
-                    "name": "\/Resources\/Resource849.mesh",
-                    "sourceFilePath": "\/Users\/anton.krasnokutskiy\/build-Studio3D-Desktop_Qt_5_8_0_clang_64bit-Debug\/x64\/products\/LensStudio.app\/Contents\/MacOS\/\/..\/Resources\/Studio3DResources.bundle\/\/\/meshes\/Sphere.mesh",
-                    "additionalProperties": "",
-                    "flags": "1",
-                    "type": "3",
-                    "subtype": "0"
                 }
             ]
         },
@@ -234,13 +225,13 @@
                         "groups": "",
                         "resources": [
                             {
-                                "name": "Tap",
-                                "resourceId": "823",
+                                "name": "Init",
+                                "resourceId": "822",
                                 "extension": "js"
                             },
                             {
-                                "name": "Init",
-                                "resourceId": "822",
+                                "name": "Tap",
+                                "resourceId": "823",
                                 "extension": "js"
                             }
                         ]
@@ -272,11 +263,6 @@
                         "name": "part1",
                         "resourceId": "837",
                         "extension": "mp3"
-                    },
-                    {
-                        "name": "Sphere",
-                        "resourceId": "849",
-                        "extension": "mesh"
                     }
                 ]
             },
@@ -304,10 +290,6 @@
                 {
                     "id": "837",
                     "path": "part1.mp3"
-                },
-                {
-                    "id": "849",
-                    "path": "Sphere.mesh"
                 }
             ]
         }

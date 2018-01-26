@@ -33,7 +33,7 @@ update.bind(function (eventData)
 		//Minimum framerate set at 20fps, as specified by Snapchat's "Performance and Optimization" article: 
 		//https://lensstudio.snapchat.com/guides/submission/performance-and-optimization/ 
 
-		if (frameBuffer.length < length / rate * 30 && deltaTime) {
+		if (frameBuffer.length < length / rate * 30) {
 			//Stores the frames into an array to be deisplayed on a sprite.
 			frameBuffer[frameNumber] = script.deviceCameraTexture.copyFrame();
 		}
