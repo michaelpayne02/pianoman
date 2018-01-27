@@ -28,7 +28,7 @@ update.bind(function (eventData)
 	if (script.api.active) {
 		deltaTime += eventData.getDeltaTime(); //Adds the time since the last frame was calculated to the deltaTime variable.
 
-		if (eventData.getDeltaTime() >= 20) return; 
+		if (eventData.getDeltaTime() >= 1/20) return; 
 		//Don't insert another frame into the buffer if we're having performance issues. This will help midigate performance issues. 
 		//Minimum framerate set at 20fps, as specified by Snapchat's "Performance and Optimization" article: 
 		//https://lensstudio.snapchat.com/guides/submission/performance-and-optimization/ 

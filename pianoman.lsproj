@@ -1,7 +1,7 @@
 {
     "lens_id": "91e21fff-a0b4-49a7-8eb6-3313bc3d5385",
     "version": "0",
-    "lastChanged": "1516935585619",
+    "lastChanged": "1517085822358",
     "preview": "icon.png",
     "isReadOnly": "false",
     "studioVersion": {
@@ -42,8 +42,7 @@
         "InspectorUiComponent": {
             "collapsedList": [
                 [
-                    "1508543170105077:279219",
-                    "1516810434331355:1238"
+                    "1508543170105077:279219"
                 ]
             ]
         }
